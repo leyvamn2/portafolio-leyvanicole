@@ -12,10 +12,16 @@
     }
 
     .name {
-        margin-right: auto; /* Esto empujará el nombre a la izquierda */
+        margin-right: auto; 
     }
     .circular-img {
-        border-radius: 50%; /* Hace que la imagen tenga forma circular */
-        width: 150px; /* Ajusta el ancho de la imagen según sea necesario */
-        height: 210px; /* Ajusta la altura de la imagen según sea necesario */
+        border-radius: 50%; 
+        width: 150px;
+        height: 210px; 
+    }
+    .box {
+        background-color: #f8f9fa;
+        border: 1px solid #ced4da;
+        padding: 20px;
+        margin-bottom: 20px;
     }
