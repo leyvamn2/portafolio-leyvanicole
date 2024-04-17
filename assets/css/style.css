@@ -13,6 +13,7 @@ body {
     justify-content: space-between;
     align-items: center;
     display: flex;
+
     left: 0;
     width: 100%;
     z-index: 1000;
@@ -89,13 +90,9 @@ body {
   #presentacion{
     background: #c1dbf6;
   }
-.circular-img {
-  width: 368px;
-  height: 368px;
-  max-width: 100%; /* Esto asegura que la imagen no exceda el ancho máximo del contenedor */
-
-  border-radius: 10%;
-  overflow: hidden;/* Permite que la altura se ajuste automáticamente */
+.img-container {
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .network_item{
@@ -111,6 +108,8 @@ body {
   height: 24px;
   width: 62%;
   gap: 32px;
+  padding-bottom: 20px; /* Ajusta el valor según sea necesario */
+
 }
 #about{
   background: #96d9c7;
@@ -124,8 +123,6 @@ body {
 
   justify-content: space-around;
   align-items: flex-start;
-  padding-bottom: 100px; /* Ajusta este valor según sea necesario */
-
 }
 
 .heroe > * {
@@ -231,5 +228,4 @@ body {
 
 footer {
   max-height: 200px; /* Establece la altura máxima deseada */
-  overflow-y: auto;
-}
+  overflow-y: auto;}
