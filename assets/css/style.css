@@ -93,9 +93,12 @@ body {
 .circular-img {
   width: 368px;
   height: 368px;
+  max-width: 100%; /* Esto asegura que la imagen no exceda el ancho máximo del contenedor */
+
   border-radius: 10%;
   overflow: hidden;/* Permite que la altura se ajuste automáticamente */
 }
+
 .network_item{
   display: flex;
     gap: 4px;
@@ -115,25 +118,42 @@ body {
 }
 
 .heroe{
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan automáticamente en múltiples líneas */
-  justify-content: center; /* Centra horizontalmente los elementos */
-  align-items: center; /* Centra verticalmente los elementos */
-  text-align: center; 
+  flex-direction: column-reverse;
+  width: 100%;
+  height: 294px;
+  margin-top: -20px; /* Ajusta el valor según sea necesario para eliminar el espacio entre las secciones */
+
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.heroe > * {
+  flex: 1; /* Hace que todos los elementos ocupen la misma cantidad de espacio */
 }
 #skills{
   background: #c1dbf6;
 }
 #hobbies{
+  background: #96d9c7;
+
+}
+#formacion{
+  background: #c1dbf6;
+}
+#proyectos{
+  background: #96d9c7;
+
+}
+#contacto{
   background: #c1dbf6;
 
 }
-.box-estudios {
+.box-formacion {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 150px;
+  width: 200px;
   height: 150px;
   margin: 10px;
   background: #f8f9fa;
@@ -156,4 +176,59 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 18.78px;
+}
+.titulo_contacto{
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 37.57px;
+}
+.contenedor__contacto{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 397px;
+  gap: 32px;
+}
+.txtarea_mensaje{
+  width: 100%;
+  height: 133px;
+  border-radius: 4px;
+  resize: none;
+}
+.input_asunto{
+  width: 100%;
+  height: 56px;
+  gap: 8px;
+  border-radius: 4px;
+}
+.enviar{
+  width: 144px;
+  height: 51px;
+  gap: 10px;
+  background: #2a7ae4;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.78px;
+  color: #ffffff;
+
+}
+.skill_name{
+  width: 66%;
+  font-weight: 400;
+  font-size: 1tpx;
+  line-height: 18.78px;  
+  text-align: justify;  
+}
+.date_formacion{
+  width: 66%;
+  height: 255px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18.78px;  
+  text-align: justify;  
+}
+
+footer {
+  max-height: 200px; /* Establece la altura máxima deseada */
+  overflow-y: auto;
 }
