@@ -10,6 +10,10 @@ body {
     padding: 10px 20px;
     position: fixed;
     top: 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
     left: 0;
     width: 100%;
     z-index: 1000;
@@ -26,12 +30,12 @@ body {
     align-items: center;
   }
   .title {
-    width: 100px; /* Ajusta el tamaño según sea necesario */
-    height: 100px; /* Ajusta el tamaño según sea necesario */
-    border-radius: 50%; /* Hace la imagen circular */
-    margin-right: 20px;
+    width: auto; /* Ajusta el ancho automáticamente */
+    height: auto; /* Ajusta la altura automáticamente */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno para mejorar la legibilidad */
+    margin-right: 20px; /* Margen derecho para separación */
 }
-  
   .name {
     margin-right: auto; 
   }
@@ -42,13 +46,16 @@ body {
     color: #333;
   }
   
-  .header-info-item.active {
-    font-weight: bold;
-  }
+
   
   /* Estilos del contenido principal */
   #main-content {
-    margin-top: 80px; /* Ajustar según la altura del encabezado */
+    margin-top: 80px; 
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;/* Ajustar según la altura del encabezado */
   }
   
   /* Estilos de las secciones */
@@ -56,6 +63,12 @@ body {
     margin-bottom: 20px;
   }
   
+  .content-presentation{
+    width: auto; /* Ajusta el ancho automáticamente */
+    height: auto; /* Ajusta la altura automáticamente */
+    padding: 10px; /* Espaciado interno para mejorar la legibilidad */
+    margin-right: 20px; /
+  }
   /* Estilos de los cuadros de habilidades */
   .box {
     display: flex;
@@ -63,11 +76,8 @@ body {
     justify-content: center;
     align-items: flex-start;
     width: 130px;
-    /* Reducir el ancho del cuadro */
     height: 130px;
-    /* Reducir la altura del cuadro */
     margin: 10px;
-
     background: #f8f9fa;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
@@ -77,3 +87,73 @@ body {
     width: 50px;
     height: 50px;
   }
+  #presentacion{
+    background: #c1dbf6;
+  }
+.circular-img {
+  width: 368px;
+  height: 368px;
+  border-radius: 10%;
+  overflow: hidden;/* Permite que la altura se ajuste automáticamente */
+}
+.network_item{
+  display: flex;
+    gap: 4px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.78px;
+}
+.network{
+  display: flex;
+  height: 24px;
+  width: 62%;
+  gap: 32px;
+}
+#about{
+  background: #96d9c7;
+}
+
+.heroe{
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan automáticamente en múltiples líneas */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  text-align: center; 
+}
+#skills{
+  background: #c1dbf6;
+}
+#hobbies{
+  background: #c1dbf6;
+
+}
+.box-estudios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  background: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+.contactarme{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.78px;
+}
+.contenedor_contacto{
+  display: flex;
+  width: 58%;
+  height: 593px;
+  flex-direction: column;
+  justify-content: space-between
+}
+.contactarme{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.78px;
+}
