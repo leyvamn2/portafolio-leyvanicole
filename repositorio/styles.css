@@ -1,27 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos del encabezado */
+  #header {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #navbar {
+    display: flex;
+    align-items: center;
+  }
+  .title {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+    border-radius: 50%; /* Hace la imagen circular */
+    margin-right: 20px;
+}
+  
+  .name {
+    margin-right: auto; 
+  }
+  
+  .header-info-item {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .header-info-item.active {
+    font-weight: bold;
+  }
+  
+  /* Estilos del contenido principal */
+  #main-content {
+    margin-top: 80px; /* Ajustar según la altura del encabezado */
+  }
+  
+  /* Estilos de las secciones */
+  section {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de los cuadros de habilidades */
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 130px;
+    /* Reducir el ancho del cuadro */
+    height: 130px;
+    /* Reducir la altura del cuadro */
+    margin: 10px;
 
-    .header-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header-info-item {
-        margin-left: 20px;
-        font-size: 14px;
-        color: #333;
-    }
-
-    .name {
-        margin-right: auto; 
-    }
-    .circular-img {
-        border-radius: 50%; 
-        width: 150px;
-        height: 210px; 
-    }
-    .box {
-        background-color: #f8f9fa;
-        border: 1px solid #ced4da;
-        padding: 20px;
-        margin-bottom: 20px;
-    }
+    background: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .programming-icon {
+    width: 50px;
+    height: 50px;
+  }

@@ -32,77 +32,113 @@
 
   <!-- ======= Header ======= -->
   <header id="header">
-    <div class="text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
-        <div class="header-info"style="margin-bottom: 20px;">
-            <div class="d-none d-lg-block">
-                <span class="name">Nicole Leyva</span>
-                <span class="header-info-item" href="#presentacion">Sobre mí</span>
-                <span class="header-info-item" href="#skills">Skills</span>
-                <span class="header-info-item" href="#hobbies">Hobbies</span>
-                <span class="header-info-item" href="#formacion">Formación</span>
-                <span class="header-info-item" href="#proyectos">Proyectos</span>
-                <span class="header-info-item" href="#contacto">Contacto</span>
-            </div>
-        </div>
+    <div class="header-container">
+      <nav id="navbar">
+        <span class="header-info">
+            <span class="name">Nicole Leyva</span>
+          <a class="header-info-item active" href="#presentacion">Sobre mí</a>
+          <a class="header-info-item" href="#skills">Skills</a>
+          <a class="header-info-item" href="#hobbies">Hobbies</a>
+          <a class="header-info-item" href="#formacion">Formación</a>
+          <a class="header-info-item" href="#proyectos">Portfolio</a>
+          <a class="header-info-item" href="#contacto">Contacto</a>
+        </span>
+      </nav>
     </div>
-</header>
-<main>
+  </header>
+<main id="main-content">
     <section id="presentacion">
         <div class="container" data-aos="fade-up">
-            
-            <div class="row" style="margin-bottom: 20px;">
+            <div class="row" id="container" style="margin-bottom: 20px;">
             
                 <div class="col-lg-4">
-                    <img src="src/me.jpg" class="img-fluid circular-img" alt="">
+                    <img src="src/me.jpeg" class="img-fluid circular-img" alt="nicole">
                 </div>
                 <div class="col-lg-8 pt-4 pt-lg-0">
-                    <div class="section-title" style="margin-bottom: 20px;"> <!-- Añade un margen inferior de 20px -->
-                        <h2>Hola, mi nombre es Nicole Leyva</h2>
-                    </div>
+                    
+                    <h2 id="title">Hola, mi nombre es Nicole Leyva</h2>
+                  
                     <div class="content">
                         <p>Estudiante de Tecnologías de Información y egresada de Ingeniería Mecatrónica. Siempre estoy en búsqueda de aprendizaje continuo.</p>
                         <p>Actualmente estoy participando en el proyecto Oracle ONE en Alura Latam</p>
+                    
+                        <ul class="title__network">
+                            <!-- Pon los enlaces de tus redes sociales favoritas -->
+                            <li class="network_item">
+                                <a href="https://github.com/leyvamn2">
+                                
+                                    <img src="src/nav1.png">
+                                    <img class="img-nav5" src="assets/icons/nav5.png">
+                                </a>
+                            </li>
+                            <li class="network_item">
+                                <a href="https://www.linkedin.com/in/lmnicole217/">
+                                    <img src="src/nav2.png">
+                                </a>
+                            </li>
+                            <li class="title__network__item">
+                                <a href="https://www.canva.com/design/DAFy7_q8-dc/Bp26kr_Up-D18xqQrgAvlw/view?utm_content=DAFy7_q8-dc&utm_campaign=designshare&utm_medium=link&utm_source=editor">
+                                    CV
+                                    <img src="src\nav4.png">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     
             
                 </div>
-            </div>
+            </div >
             <div class="row">
                 <div class="col-lg-8 pt-4 pt-lg-0 content">
                     <h3>Sobre mi</h3>
                     <p>Estoy enfocada en el desarrollo de proyectos IoT, desarrollo de aplicaciones móviles y aplicaciones web.</p>
                     <p>Desarrollo proyectos que utilizan las tecnologías de información para solucionar problemas sociales.</p>
-                    <p>Soy fiel creyente de que las tecnologías pueden generar mejoras sociales</p>
-
             
                 </div>
-            </div>
-            
-    
             </div>
         </div>
     </section>
 
     <section id="skills">
-        <h3>Skills</h3>
-        <div class="container">
+        <h3 id="title">Skills</h3>
+        <div  id="title_container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="box">
-                        
-                        <img src="src/androide.png" alt="Descripción de la imagen">
+                        <img class="programming-icon" src="src/html_icon.png" alt="Descripción de la imagen">
+                        <p id="skill_name">HTML</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="box">
-                        <h3>Box 2</h3>
-                            <img src="src/androide.png" alt="Descripción de la imagen">
+                            <img  class="programming-icon" src="src/python.png" alt="Descripción de la imagen">
+                            <p id="skill_name">Python</p>
+
+                        </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="box">
+                        <img  class="programming-icon" src="src/js_icon.png" alt="Descripción de la imagen">
+                        <p id="skill_name">JavaScript</p>
+
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="box">
-                        <h3>Box 3</h3>
-                        <p>Contenido de la tercera caja...</p>
+                        <img  class="programming-icon" src="src/react_icon.png" alt="Descripción de la imagen">
+                        <p id="skill_name">React</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="box">
+                        <img  class="programming-icon" src="src/kotlin_250x250.png" alt="Descripción de la imagen">
+                        <p id="skill_name">Kotlin</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="box">
+                        <img  class="programming-icon" src="src/nodejs.png" alt="Descripción de la imagen">
+                        <p id="skill_name">Node.js</p>
                     </div>
                 </div>
             </div>
