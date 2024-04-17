@@ -1,0 +1,21 @@
+
+    .header-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-info-item {
+        margin-left: 20px;
+        font-size: 14px;
+        color: #333;
+    }
+
+    .name {
+        margin-right: auto; /* Esto empujará el nombre a la izquierda */
+    }
+    .circular-img {
+        border-radius: 50%; /* Hace que la imagen tenga forma circular */
+        width: 150px; /* Ajusta el ancho de la imagen según sea necesario */
+        height: 210px; /* Ajusta la altura de la imagen según sea necesario */
+    }
