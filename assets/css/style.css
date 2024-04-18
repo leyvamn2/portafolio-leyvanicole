@@ -79,13 +79,17 @@ body {
     height: 130px;
     margin: 10px;
     background: #f8f9fa;
+    border-radius: 5px;
+
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
   }
   
   .programming-icon {
     width: 50px;
     height: 50px;
+    align-items: center;
   }
   #presentacion{
     background: #c1dbf6;
@@ -103,6 +107,13 @@ body {
     font-size: 16px;
     line-height: 18.78px;
 }
+.network-pic{
+  height: 35px;
+  width: 35px;
+  max-width: 35px; /* Puedes ajustar este valor según el tamaño deseado */
+
+   
+}
 .network{
   display: flex;
   height: 24px;
@@ -115,18 +126,15 @@ body {
   background: #96d9c7;
 }
 
-.heroe{
-  flex-direction: column-reverse;
+#hero {
   width: 100%;
-  height: 294px;
-  margin-top: -20px; /* Ajusta el valor según sea necesario para eliminar el espacio entre las secciones */
-
-  justify-content: space-around;
-  align-items: flex-start;
+  height: 100vh;
+  background-size: cover;
 }
 
-.heroe > * {
-  flex: 1; /* Hace que todos los elementos ocupen la misma cantidad de espacio */
+#hero .container {
+  padding-top: 70px;
+  position: relative;
 }
 #skills{
   background: #c1dbf6;
@@ -154,9 +162,12 @@ body {
   width: 200px;
   height: 150px;
   margin: 10px;
-  background: #f8f9fa;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease;
+  margin-bottom: 20px;
 }
 .contactarme{
   font-weight: 500;
@@ -210,12 +221,17 @@ body {
   color: #ffffff;
 
 }
+.skill_title {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
 .skill_name{
   width: 66%;
   font-weight: 400;
-  font-size: 1tpx;
+  font-size: 12px;
   line-height: 18.78px;  
-  text-align: justify;  
+  text-align: center;  
 }
 .date_formacion{
   width: 66%;
@@ -226,6 +242,61 @@ body {
   text-align: justify;  
 }
 
-footer {
-  max-height: 200px; /* Establece la altura máxima deseada */
-  overflow-y: auto;}
+#footer {
+  background: #e9e8e6;
+  padding: 30px 0;
+  color: #222222;
+  font-size: 14px;
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+}
+
+#footer .credits a {
+  color: #34b7a7;
+}
+
+#proyectos .box-formacion {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+#proyectos .box-formacion {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+#proyectos .skill_title {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#proyectos .skill_name {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+#proyectos .date_formacion {
+  color: #777;
+  margin-bottom: 0;
+}
+
+#proyectos .date_formacion a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#proyectos .date_formacion a:hover {
+  text-decoration: underline;
+}

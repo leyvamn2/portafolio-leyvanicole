@@ -30,22 +30,20 @@
 
   <!-- ======= Header ======= -->
  <header id="header">
-  <div class="text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
-      <div class="header-info text-end"> <!-- Alinea los elementos a la derecha en pantallas grandes -->
+    <div class="container-fluid d-flex justify-content-between align-items-center">
         <div class="d-none d-lg-block">
-            <span class="name">Nicole Leyva</span>
-            <a class="header-info-item" href="#presentacion">Sobre mí</a>
+            <span class="logo me-auto me-lg-0"><a href="index.html">Nicole Leyva</a></span>            <a class="header-info-item" href="#presentacion">Sobre mí</a>
             <a class="header-info-item" href="#skills">Skills</a>
             <a class="header-info-item" href="#hobbies">Hobbies</a>
             <a class="header-info-item" href="#formacion">Formación</a>
             <a class="header-info-item" href="#proyectos">Proyectos</a>
             <a class="header-info-item" href="#contacto">Contacto</a>
         </div>
-      </div>
+      
   </div>
   <div class="text-center d-lg-none"> <!-- Alinea el nombre al centro en pantallas pequeñas -->
-      <span class="name">Nicole Leyva</span>
-  </div>
+    <span class="logo me-auto me-lg-0"><a href="index.html">Nicole Leyva</a></span>            <a class="header-info-item" href="#presentacion">Sobre mí</a>
+</div>
 </header>
     <main id="main-content">
             <section id="presentacion" class="heroe">
@@ -53,7 +51,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-3 col-md-4 col-sm-6 text-center d-flex justify-content-center"> <!-- Añade las clases d-flex justify-content-center aquí -->
                             <div class="img-container">
-                                <img src="assets/res/me.jpeg" class="img-fluid circular-img" alt="nicole">
+                                <img src="assets/res/me.jpeg" class="img-fluid " alt="nicole">
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-8 col-sm-12 pt-4 pt-md-0 text-center text-md-start">
@@ -74,7 +72,8 @@
                                 </div>
                                 <div class="network_item">
                                     <a href="https://www.canva.com/design/DAFy7_q8-dc/Bp26kr_Up-D18xqQrgAvlw/view?utm_content=DAFy7_q8-dc&utm_campaign=designshare&utm_medium=link&utm_source=editor">
-                                        CV
+                                        <img class="network-pic"src="assets/res/cv.png">
+
                                     </a>
                                 </div>
                             </div>
@@ -159,31 +158,31 @@
                             <p class="skill_name">Cocinar</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="box">
                             <img class="programming-icon" src="assets/res/investigacion.png" alt="Investigación">
                             <p class="skill_name">Investigación</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="box">
                             <img class="programming-icon" src="assets/res/estudiar.png" alt="Estudiar">
                             <p class="skill_name">Estudiar</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="box">
                             <img class="programming-icon" src="assets/res/leer.png" alt="Leer">
                             <p class="skill_name">Leer</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="box">
                             <img class="programming-icon" src="assets/res/musica.png" alt="Música">
                             <p class="skill_name">Música</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="box">
                             <img class="programming-icon" src="assets/res/huella.png" alt="Mascotas">
                             <p class="skill_name">Mascotas</p>
@@ -196,19 +195,40 @@
         <section id="formacion" class="heroe">
             <div class="container" data-aos="fade-up">
                 <div class="row" id="container">
-                    <h2 id="title">Formación</h2>
+                    <h2 id="title">Formación y Cursos</h2>
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="box-formacion">
-                            <img class="programming-icon" src="assets/res/cocinar.png" alt="Ingeniería Mecatrónica">
+                            <p class="skill_title">Formación académica</p>
                             <p class="skill_name">Ingeniería Mecatrónica</p>
                             <p class="date_formacion">Enero 2016 - Diciembre 2019</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="box-formacion">
-                            <img class="programming-icon" src="assets/res/investigacion.png" alt="Tecnologías de Información">
+                            <p class="skill_title">Formación académica</p>
                             <p class="skill_name">Tecnologías de Información</p>
                             <p class="date_formacion">Enero 2023 - Actual</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="box-formacion">
+                            <p class="skill_title">Cursos</p>
+                            <p class="skill_name">Formación en Desarrollo Front-End - Alura ONE</p>
+                            <p class="date_formacion">En curso</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="box-formacion">
+                            <p class="skill_title">Cursos</p>
+                            <p class="skill_name">Desarrollo de Apps Móviles - Google</p>
+                            <p class="date_formacion">2023</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="box-formacion">
+                            <p class="skill_title">Certificado</p>
+                            <p class="skill_name">Gestión de proyectos de Google</p>
+                            <p class="date_formacion">2023</p>
                         </div>
                     </div>
                 </div>
@@ -220,23 +240,40 @@
                 <div class="row" id="container">
                     <h2 id="title">Proyectos</h2>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <ul>
-                            <li><a href="https://github.com/leyvamn2/AppWaterStatus">Kotlin - App Water Status</a></li>
-                            <li>Python
-                                <ul>
-                                    <li><a href="https://github.com/leyvamn2/pykeylogger">Keylogger</a></li>
-                                    <li><a href="https://github.com/leyvamn2/Learning-python">Learning Exercises</a></li>
-                                    <li><a href="https://github.com/leyvamn2/snakewhenicantsleep">Snake Game</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="https://github.com/leyvamn2/REST-API">Node.js - Desarrollo de API REST</a></li>
-                            <li><a href="https://github.com/leyvamn2/IoT-Collection-Storage">Water Quality IoT Controller</a></li>
-                            <li>iOS projects:
-                                <ul>
-                                    <li><a href="https://github.com/leyvamn2/ScrumDinger_App_iOS">Scrum Dinger</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <div class="box-formacion">
+                            <p class="skill_title">Kotlin - App Water Status</p>
+                            <a href="https://github.com/leyvamn2/AppWaterStatus">Ver en GitHub</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="box-formacion">
+                            <p class="skill_title">Python - Keylogger</p>
+                            <a href="https://github.com/leyvamn2/pykeylogger">Ver en GitHub</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="box-formacion">
+                            <p class="skill_title">Node.js - Desarrollo de API REST</p>
+                            <a href="https://github.com/leyvamn2/REST-API">Ver en GitHub</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="box-formacion">
+                            <p class="skill_title">Water Quality IoT Controller</p>
+                                <a href="https://github.com/leyvamn2/IoT-Collection-Storage">Ver en GitHub</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="box-formacion">
+                            <p class="skill_title">iOS - Scrum Dinger</p>
+                            <a href="https://github.com/leyvamn2/ScrumDinger_App_iOS">Ver en GitHub</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="box-formacion">
+                            <p class="skill_title">Pokedex</p>
+                            <a href="https://github.com/leyvamn2/Pokedex">Ver en GitHub</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -267,10 +304,12 @@
     </main>
     
 
-<footer>
-    <section>
-        <p>Nicole Leyva -🐾💕</p>
-
+<footer id="footer">
+    <section class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Nicole Leyva</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
     </section>
 </footer>
   
